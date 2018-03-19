@@ -22,7 +22,7 @@ class SaladAndDrinkOrderSystem(val menu: Array<Item>) {
 
     fun calculateTotal(): Double {
         var sum = 0.0
-        for (item in 0..numOfOrderedItem) {
+        for (item in 0 until numOfOrderedItem) {
             sum += orderedItem[item]!!.calculateOrderPrice()
         }
         return sum
